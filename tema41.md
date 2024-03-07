@@ -11,7 +11,7 @@ En los POO, de una complejidad relativa, hay multitud de clase y relaciones entr
 ## Objetos y clases
 ¿Te gustan los perros? Espero que sí, porque te voy a explicar los conceptos de clase y objeto a partir de ejemplos relacionados con estas maravillosas criaturas.
 
-[UML: clase Perro](./img/uml_clase_perro.png)
+![UML: clase Perro](./img/uml_clase_perro.png)
 
 Lo que ves justo arriba es un **diagrama de clases de UML** que aprenderemos a interpretar y construir más adelante, aunque seguramente te resultará intuitivo que dicho diagrama describe una clase llamada *Perro* con una serie de atributos descritos en la primera parte y un conjunto de operaciones en la segunda parte.
 
@@ -31,7 +31,7 @@ Resumiendo:
 
 En la siguiente imagen se muestran dos perros (objetos) que son instancias de la clase *Perro*. Se llaman Otto y Oriol:
 
-[Objetos de la clase Perro](./img/objetos_perro.png)
+![Objetos de la clase Perro](./img/objetos_perro.png)
 
 Se ha usado la misma clase, el mismo *plano*, para instanciar a Otto y a Oriol, dos objetos de la clase *Perro*, dos instancias de la clase *Perro*, como quieras decirlo. La diferencia está en los valores de los atributos.
 
@@ -42,20 +42,20 @@ Hasta ahora todo va muy bien, solo tenemos una clase, por lo que es bastante fá
 
 Imagina que tu vecino tiene un gato llamado Garfield. Los gatos no son tan simpáticos como los perros, y además les tengo alergia, pero tienen muchas cosas en común: nombre, sexo, edad y color, son atributos tanto de perros como de gatos. Los gatos también pueden respirar, dormir y correr igual que los perros, por lo que podríamos definir una clase base llamada *Animal* que definirá los atributos y los comportamientos comunes:
 
-[Jerarquías de clases para Animal](./img/jerarquia_animal_perro_gato.png)
+![Jerarquías de clases para Animal](./img/jerarquia_animal_perro_gato.png)
 
 Una clase padre, como la clase *Animal*, se denomina **superclase** (o **clase base**). Sus hijas, como las clases *Perro* y *Gato*, se denominan **subclases** (o **clases derivadas**). Las subclases heredan el estado y comportamiento de su padre (la superclase) y se limitan a definir atributos o comportamientos que son diferentes. Por lo tanto la clase *Perro* contendrá el método ladra y, la clase *Gato*, el método maulla.
 
 Asumiendo que tenemos una tarea relacionada, podemos ir más lejos y extraer una clase más genérica para todos los *Organismo* vivos, que se convertirá en una superclase para *Animal* y *Planta*. En esta jerarquía de clases, la clase *Perro* lo hereda todo de las clases *Animal* y *Organismo*:
 
-[Jerarquía de Organismo](./img/uml_jerarquia_organismos.png)
+![Jerarquía de Organismo](./img/uml_jerarquia_organismos.png)
 
 Como ves en el diagrama UML de arriba, podemos simplificarlo si es más importante mostrar sus relaciones que sus contenidos.
 
 ## Los pilares de la POO
 La POO se basa en cuatro pilares o conceptos que lo diferencian de otros paradigmas de programación, a saber: abstracción, polimorfismo, encapsulación y herencia.
 
-[Pilares de la POO](./img/pilares_poo.png)
+![Pilares de la POO](./img/pilares_poo.png)
 
 ### Abstracción
 En la POO, la abstracción es el proceso de identificar las características y comportamientos esenciales de un objeto en un dominio específico, y representarlas en un modelo que pueda ser utilizado para construir objetos reales. La abstracción nos permite enfocarnos en lo más importante de un objeto y ocultar los detalles irrelevantes para el problema que estamos tratando de resolver.
@@ -64,7 +64,7 @@ En la práctica, en los lenguajes de POO tenemos la posibilidad de crear clases 
 
 Imagina un sistema para una empresa de alquiler de vehículos donde los usuarios pueden alquilar diferentes tipos de vehículos: coches, motos y bicicletas. Cada tipo de vehículo tiene atributos y métodos específicos, pero todos los vehículos comparten algunos atributos y métodos en común, como su modelo, marca, año de fabricación y precio de alquiler. Otros comportamientos y atributos pueden y deben ser abstractos, como: la descripción, el número de pasajeros y el tipo de transmisión.
 
-[Clase abstracta](./img/uml_vehiculo_abstracto.png)
+![Clase abstracta](./img/uml_vehiculo_abstracto.png)
 
 La implementación de la clase *Vehiculo* en Java quedaría tal cual te muestro a continuación:
 
@@ -113,7 +113,7 @@ Para ofrecer la encapsulación, los lenguajes de programación disponene de meca
 
 Aquí te muestro una clase *Bicicleta* en la que se ocultan los atributos *platos* y *coronas*, pero permite acceder a las velocidades que tiene la bicicleta a través del método *getVelocidades*:
 
-[Clase abstracta](./img/uml_bicicleta.png)
+![Clase abstracta](./img/uml_bicicleta.png)
 
 ### Herencia
 La herencia, como se ha visto anteriormente, permite crear nuevas clases a partir de otras ya existentes. La principal ventaja de la herencia es la reutilización ya que si quieres crear una clase ligeramente diferente a una ya existente, no hay necesidad de duplicar el código. En su lugar, extiendes de la clase ya existente y colocas las funcionalidades diferentes en la nueva clase.

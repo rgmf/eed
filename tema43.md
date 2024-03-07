@@ -7,19 +7,19 @@ En este apartado te voy a explicar cómo convertir los diagramas de clases a có
 <table>
 	<tr>
 		<td>
-			[UML clase Bicicleta](./img/uml_bicicleta.png)
+			![UML clase Bicicleta](./img/uml_bicicleta.png)
 		</td>
 		<td>
-			```java
-			public class Bibicleta {
-				private int platos;
-				private int coronas;
+```java
+public class Bibicleta {
+	private int platos;
+	private int coronas;
 
-	            public int getVelocidades() {
-	                // ...
-				}
-			}
-			```
+	public int getVelocidades() {
+		// ...
+	}
+}
+```
 		</td>
 	</tr>
 </table>

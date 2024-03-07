@@ -1,7 +1,7 @@
 # UML: Diagrama de clases
 UML (Unified Modeling Language) es un lenguaje de modelado visual utilizado en el desarrollo de software para representar gráficamente los sistemas de software. UML proporciona un conjunto de diagramas que permiten a los desarrolladores representar diferentes aspectos de un sistema, como su estructura, comportamiento y relaciones entre los componentes. Al utilizar UML, los desarrolladores pueden comunicar de manera más efectiva y comprender mejor los requisitos del sistema, lo que les permite diseñar e implementar soluciones más eficaces y de alta calidad.
 
-[UML: diagramas](./img/uml_diagramas.jpg)
+![UML: diagramas](./img/uml_diagramas.jpg)
 
 UML cuenta con varios tipos de diagramas, los cuales muestran diferentes aspectos de las entidades representadas. En esta unidad nos centramos en los denominados diagrama de clases.
 
@@ -28,7 +28,7 @@ Para los atributos se puede indicar el tipo de dato y para los métodos los par�
 
 Te muestro un ejemplo. Sí, uno más en el que el perro es el protagonista:
 
-[UML: diagramas](./img/uml_perro_con_tipos.png)
+![UML: diagramas](./img/uml_perro_con_tipos.png)
 
 Según el estándar UML, es obligatorio especificar tanto el tipo de los atributos como los tipos de los parámetros y del resultado que devuelven los métodos. En UML, cada atributo o parámetro debe estar asociado con un tipo de datos que lo defina, y en el caso de los métodos, se debe especificar tanto el tipo de retorno como el tipo de los parámetros.
 
@@ -36,7 +36,7 @@ En la práctica, aunque el estándar UML establece que es obligatorio especifica
 
 Así, estos diagramas de clases, se pueden especificar con un mayor o menor nivel de detalle, lo que permite utilizarlos desde una perspectiva **conceptual**, de **especificación** o de **implementación**, como puedes ver en la siguinete imagen:
 
-[UML: diagramas](./img/uml_perspectivas.png)
+![UML: diagramas](./img/uml_perspectivas.png)
 
 Sin embargo, en general, es recomendable especificar siempre los tipos de datos en los diagramas de clases para garantizar una mayor precisión y consistencia en la definición de los sistemas de software, así como para facilitar su comprensión y mantenimiento a largo plazo. Además, el uso de tipos de datos adecuados también puede contribuir a mejorar la eficiencia y la seguridad de los sistemas de software.
 
@@ -45,7 +45,7 @@ En POO, una interfaz es un conjunto de métodos que representan un contrato que 
 
 Para modelar una interfaz tan solo tienes que añadir arriba del nombre de la clase que es una interfaz: **\<\<interface\>\>**. Evidentemente, la parte donde se indican los atributos, en una interfaz, está vacía:
 
-[UML: diagramas](./img/uml_interfaz_perro.png)
+![UML: diagramas](./img/uml_interfaz_perro.png)
 
 En esta interfaz *IPerro* se obliga a las clases que la implementen a definir los métodos que se listan, todos, sin excepción.
 
@@ -56,7 +56,7 @@ En UML se indican las clases abstractas escribiendo su nombre en cursiva y los m
 
 Aquí te dejo un ejemplo de modelado de una clase absracta en UML:
 
-[UML: diagramas](./img/uml_animal_abstracto.png)
+![UML: diagramas](./img/uml_animal_abstracto.png)
 
 Como ves hay atributos (todos *protected*) y métodos, de los cuales 3 son abstractos:
 
@@ -86,10 +86,20 @@ Para la multiplicidad puedes usar estas opciones:
 	</tr>
 	<tr>
         <td>1</td><td>Uno y solo uno</td>
+	</tr>
+	<tr>
 		<td>0..1</td><td>Cero o uno</td>
+	</tr>
+	<tr>
 		<td>N..M</td><td>Desde N hasta M</td>
+	</tr>
+	<tr>
 		<td>*</td><td>Cero o varios</td>
+	</tr>
+	<tr>
 		<td>0..*</td><td>Cero o varios</td>
+	</tr>
+	<tr>
 		<td>1..*</td><td>Uno o varios</td>
 	</tr>
 </table>
@@ -97,7 +107,7 @@ Para la multiplicidad puedes usar estas opciones:
 ### Herencia
 Ya te he hablado de la herencia en el apartado anterior. Aquí te vuelvo a mostrar cómo se modela dicha relación:
 
-[UML: diagramas](./img/uml_animal_perro_gato.png)
+![UML: diagramas](./img/uml_animal_perro_gato.png)
 
 Se usa la flecha con punta blanca cerrada para indicar la relación de herencia, donde la clase de la que sale la fleche hereda de la clase donde está la punta de la flecha.
 
@@ -108,7 +118,7 @@ En la mayoría de lenguajes de POO solo se permite la herencia simple pero se pu
 
 La implementación de interfaces se indica por medio de flechas con líneas discontinuas acabadas en una punta blanca cerrada, como ves en el siguiente ejemplo:
 
-[UML: diagramas](./img/uml_implementar_vehiculo.png)
+![UML: diagramas](./img/uml_implementar_vehiculo.png)
 
 En este ejemplo, cambiamos de dominio, dejamos a un lado el fantástico mundo de los animales y pasamos al de los coches, no tan fascinante, la verdad. En cualquier caso, todos los vehículos necesitan acelerar y frenar pero cada uno tiene un sistema para hacerlo.
 
@@ -121,7 +131,7 @@ Esta es la relación más débil entre clases y se da cuando una clase usa a otr
 
 Esta relación se representa por medio de una línea discontinua acaba en una flecha abierta hacia la clase que es usada.
 
-[UML: diagramas](./img/uml_dependencia.png)
+![UML: diagramas](./img/uml_dependencia.png)
 
 ### Asociación
 La asociación es una relación entre dos clases que indica que una clase conoce la existencia de la otra clase y puede interactuar con ella de manera directa y permanente. Por ejemplo, una clase *Persona* puede tener una asociación con una clase *Dirección* en la que cada objeto *Persona* tiene una dirección asociada. En UML, la asociación se representa mediante una línea entre dos clases, que puede tener una etiqueta que indica la naturaleza de la asociación.
@@ -132,14 +142,14 @@ Las asociaciones pueden ser bidireccionales o unidireccionales. Si son unidirecc
 
 En el ejemplo siguiente, hay una relación entre *Persona* y *Dirección* donde la navegabilidad va de *Persona* a *Dirección* porque una *Persona* tiene la responsabilidad de indicar su *Dirección*, pero una *Dirección* no tiene la obligación de indicar a qué *Persona* pertenence:
 
-[UML: diagramas](./img/uml_asociaciones.png)
+![UML: diagramas](./img/uml_asociaciones.png)
 
 ### Agregación
 La agregación es una relación entre dos clases en la que una clase (la clase *todo*) contiene una o varias instancias de la otra clase (la clase *parte*) y estas instancias pueden existir independientemente de la clase *todo*. Por ejemplo, una clase *Edificio* puede tener una agregación con una clase *Habitación*, en la que cada objeto *Edificio* tiene varias instancias de *Habitación*, y estas habitaciones pueden existir independientemente del edificio. En UML, la agregación se representa mediante una línea con un diamante vacío en el extremo de la clase *todo*.
 
 Veamos un ejemplo clásico: una *Bicicleta* es un agregado de dos *Rueda*, un *Sillin*, un *Manillar*, un *Cuadro* y dos *Pedal*:
 
-[UML: diagramas](./img/uml_agregacion.png)
+![UML: diagramas](./img/uml_agregacion.png)
 
 Cuando se construye una instancia (objeto) de la clase *Bicicleta* hay que construir los objetos de las partes: *Rueda*, *Sillin*, *Manillar*, *Cuadro* y *Pedal*, y formar, así, la bicicleta. Cuando se destruya el objeto *Bicicleta* no hace falta eliminar sus agregados, ya que pueden ser utilizados para formar otros objetos *Bicicleta*.
 
@@ -148,9 +158,9 @@ La composición es similar a la agregación, pero con una relación más fuerte 
 
 En este ejemplo, se tiene la clase *Pedido* que consta de varias *LineaPedido* que, a su vez, tiene una asociación con un *Producto*:
 
-[UML: diagramas](./img/uml_composicion.png)
+![UML: diagramas](./img/uml_composicion.png)
 
 ## Resumen de las diferentes relaciones
 Aquí te dejo una imagen que representa gráficamente las relaciones que podemos encontrar en los diagramas de clases en UML, de las más débiles a las más fuertes:
 
-[UML: diagramas](./img/uml_relaciones_resumen.png)
+![UML: diagramas](./img/uml_relaciones_resumen.png)
