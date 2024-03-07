@@ -7,7 +7,7 @@ En este apartado te voy a explicar cómo convertir los diagramas de clases a có
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_bicicleta.png" alt="UML Bicicleta">
+			<img width="200px" src="./img/uml_bicicleta.png" alt="UML Bicicleta">
 		</td>
 		<td>
 			<pre>
@@ -29,7 +29,7 @@ public class Bibicleta {
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_animal_abstracto.png" alt="UML Animal abstracto">
+			<img width="200px" src="./img/uml_animal_abstracto.png" alt="UML Animal abstracto">
 		</td>
 		<td>
 <pre>
@@ -60,7 +60,7 @@ public abstract class Animal {
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_interfaz_perro.png" alt="UML interfaz Perro">
+			<img width="200px" src="./img/uml_interfaz_perro.png" alt="UML interfaz Perro">
 		</td>
 		<td>
 <pre>
@@ -81,7 +81,7 @@ public interface IPerro {
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_enum_dias_semana.png" alt="UML Enum">
+			<img width="200px" src="./img/uml_enum_dias_semana.png" alt="UML Enum">
 		</td>
 		<td>
 <pre>
@@ -105,7 +105,7 @@ public enum DiaSemana {
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_herencia_persona_cliente.png" alt="Herencia">
+			<img width="200px" src="./img/uml_herencia_persona_cliente.png" alt="Herencia">
 		</td>
 		<td>
 <pre>
@@ -126,7 +126,7 @@ public class Cliente extends Persona {
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_implements_ivehiculo.png" alt="Implementación">
+			<img width="200px" src="./img/uml_implements_ivehiculo.png" alt="Implementación">
 		</td>
 		<td>
 <pre>
@@ -148,7 +148,7 @@ public class Bicicleta implements IVehiculo {
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_dependencia_persona_fecha.png" alt="Dependencia">
+			<img width="200px" src="./img/uml_dependencia_persona_fecha.png" alt="Dependencia">
 		</td>
 		<td>
 <pre>
@@ -176,7 +176,7 @@ Las asociaciones generan un código diferente en base a si la relación es unidi
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_relacion_bidireccional_n_m.png" alt="Asocación">
+			<img width="200px" src="./img/uml_relacion_bidireccional_n_m.png" alt="Asocación">
 		</td>
 		<td>
 <pre>
@@ -201,7 +201,7 @@ public class Mascota {
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_relacion_bidireccional_1_n.png" alt="Asocación">
+			<img width="200px" src="./img/uml_relacion_bidireccional_1_n.png" alt="Asocación">
 		</td>
 		<td>
 <pre>
@@ -226,7 +226,7 @@ public class Mascota {
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_relacion_unidireccional.png" alt="Asocación">
+			<img width="200px" src="./img/uml_relacion_unidireccional.png" alt="Asocación">
 		</td>
 		<td>
 <pre>
@@ -250,7 +250,7 @@ public class Mascota {
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_agregacion.png" alt="Agregación">
+			<img width="200px" src="./img/uml_agregacion.png" alt="Agregación">
 		</td>
 		<td>
 <pre>
@@ -274,7 +274,7 @@ class Punto {
 <table>
 	<tr>
 		<td>
-			<img src="./img/uml_composicion_coche.png" alt="Agregación">
+			<img width="200px" src="./img/uml_composicion_coche.png" alt="Agregación">
 		</td>
 		<td>
 <pre>
