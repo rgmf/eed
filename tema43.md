@@ -10,6 +10,7 @@ En este apartado te voy a explicar cómo convertir los diagramas de clases a có
 			<img src="./img/uml_bicicleta.png" alt="UML Bicicleta">
 		</td>
 		<td>
+		<pre>
 		<code>
 public class Bibicleta {
 	private int platos;
@@ -19,7 +20,8 @@ public class Bibicleta {
 		// ...
 	}
 }
-</code>
+	</code>
+	</pre>
 		</td>
 	</tr>
 </table>
