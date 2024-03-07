@@ -15,4 +15,7 @@
    6. Planificación de pruebas
 	  1. [Enfoque de caja blanca](tema361.md)
 	  2. [Enfoque de caja negra](tema362.md)
-   
+4. [Diagrama de clases](tema4.md)
+   1. [Fundamentos de la POO](tema41.md)
+   2. [UML: Diagrama de clases](tema42.md)
+   3. [UML: de diagrama de clases a código Java](tema43.md)
