@@ -55,7 +55,7 @@ Te explico:
 
 Imagina el ejemplo en que se require un valor mayor o igual que 8:
 
-[Valores límite: ejemplo 1](./img/valores_limite_1.png)
+![Valores límite: ejemplo 1](./img/valores_limite_1.png)
 
 En este ejemplo puedes ver que se ha optado por usar la técnica de los 2 valores poniendo la frontera entre el número 7 y el 8. Por ese motivo, los valores límite son: el 7 y el 8.
 
@@ -63,7 +63,7 @@ Si pusieras el límite justo en el 8, entonces los valores límites sería: 7, 8
 
 Otro ejemplo.
 
-[Valores límite: ejemplo 2](./img/valores_limite_2.png)
+![Valores límite: ejemplo 2](./img/valores_limite_2.png)
 
 Aquí se require un valor entre el 1 y el 5, ambos incluidos. Hay dos fronteras: la frontera entre 0 y 1 y la frontera entre 5 y 6. Por eso, los valores límite son cuatro: 0, 1, 5 y 6.
 
