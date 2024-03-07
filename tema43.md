@@ -13,12 +13,12 @@ En este apartado te voy a explicar cómo convertir los diagramas de clases a có
 		<pre>
 		<code>
 public class Bibicleta {
-	private int platos;
-	private int coronas;
+    private int platos;
+    private int coronas;
 
-	public int getVelocidades() {
-		// ...
-	}
+    public int getVelocidades() {
+        // ...
+    }
 }
 	</code>
 	</pre>
