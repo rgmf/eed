@@ -19,3 +19,5 @@
    1. [Fundamentos de la POO](tema41.md)
    2. [UML: Diagrama de clases](tema42.md)
    3. [UML: de diagrama de clases a código Java](tema43.md)
+5. [Diagramas de comportamiento](tema5.md)
+   1. [Diagramas de Casos de Uso](tema51.md)
